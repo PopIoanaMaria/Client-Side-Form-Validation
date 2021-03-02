@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <!-- <script src="app.js"></script>  -->
+    <title>Client-Side Form Validation</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Create Account</h2>
+        </div>
+        <form class="form" id="form">
+            <div class="form-control">
+                <label>Username</label>
+                <input type="text" placeholder="Name" id="username">
+                <i class="fas fa-thumbs-up"></i>
+                <i class="fas fa-thumbs-down"></i>
+                <small>Error message</small>
+            </div>
+
+            <div class="form-control">
+                <label>Email</label>
+                <input type="email" placeholder="Email" id="email">
+                <i class="fas fa-thumbs-up"></i>
+                <i class="fas fa-thumbs-down"></i>
+                <small>Error message</small>
+            </div>
+
+
+            <div class="form-control">
+                <label>Password</label>
+                <input type="password" placeholder="Password" id="password">
+                <i class="fas fa-thumbs-up"></i>
+                <i class="fas fa-thumbs-down"></i>
+                <small>Error message</small>
+            </div>
+
+            <div class="form-control">
+                <label>Password Check</label>
+                <input type="password" placeholder="PasswordCheck" id="password2">
+                <i class="fas fa-thumbs-up"></i>
+                <i class="fas fa-thumbs-down"></i>
+                <small>Error message</small>
+            </div>
+
+            <div class="form-control">
+                <label>Telephone</label>
+                <input type="tel" placeholder="Number" id="number" pattern="[0-9]{2}-[0-9]{2}-[0-9]{3}-[0-9]{3}" required>
+                <i class="fas fa-thumbs-up"></i>
+                <i class="fas fa-thumbs-down"></i>
+                <small>Error message</small>
+            </div>
+
+            <div class="form-control">
+                <label>Gender</label>
+                <select id="gen" name="gen">
+                    <option value="feminin">Female</option>
+                    <option value="masculin">Male</option>
+                </select>
+                <small>Error message</small>
+            </div>
+
+
+            <button>Submit</button>
+            <script src="app.js"></script>
+        </form>
+    </div>
+</body>
+</html>
